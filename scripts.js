@@ -8,98 +8,60 @@ let grid = ["", "", "", "", "", "", "", "", "", ];
 let turn = 0;
 let retry = false;
 document.getElementById("grid-container").addEventListener("click", event => {
-  if (turn == 0 && retry == false) {
+  if (turn == 0) {
     divReplace("X")
     turn++;
-  } else if (turn == 1 && retry == false) {
+    console.log(turn);
+  } else if (turn == 1) {
     divReplace("O")
     turn--;
+    console.log(turn);
   }
 
 });
 
 function divReplace(playerIcon) {
   document.getElementById("item0").addEventListener("click", event => {
-    if (grid[0] != "") {
-      retry = true;
-    } else {
-      grid[0] = playerIcon;
-      document.getElementById("item0").innerHTML = grid[0];
-      retry = false;
-    }
-
-
+    grid[0] = playerIcon;
+    document.getElementById("item0").innerHTML = grid[0];
   });
   document.getElementById("item1").addEventListener("click", event => {
-    if (grid[1] != "") {
-      retry = true;
-    } else {
-      grid[1] = playerIcon;
-      document.getElementById("item0").innerHTML = grid[1];
-      retry = false;
-    }
+    grid[1] = playerIcon;
+    document.getElementById("item1").innerHTML = grid[1];
   });
   document.getElementById("item2").addEventListener("click", event => {
-    if (grid[0] != "") {
-      retry = true;
-    } else {
-      grid[0] = playerIcon;
-      document.getElementById("item0").innerHTML = grid[0];
-      retry = false;
-    }
+    grid[2] = playerIcon;
+
+    document.getElementById("item2").innerHTML = grid[2];
   });
   document.getElementById("item3").addEventListener("click", event => {
-    if (grid[0] != "") {
-      retry = true;
-    } else {
-      grid[0] = playerIcon;
-      document.getElementById("item0").innerHTML = grid[0];
-      retry = false;
-    }
+    grid[3] = playerIcon;
+
+    document.getElementById("item3").innerHTML = grid[3];
   });
   document.getElementById("item4").addEventListener("click", event => {
-    if (grid[0] != "") {
-      retry = true;
-    } else {
-      grid[0] = playerIcon;
-      document.getElementById("item0").innerHTML = grid[0];
-      retry = false;
-    }
+    grid[4] = playerIcon;
+
+    document.getElementById("item4").innerHTML = grid[4];
   });
   document.getElementById("item5").addEventListener("click", event => {
-    if (grid[0] != "") {
-      retry = true;
-    } else {
-      grid[0] = playerIcon;
-      document.getElementById("item0").innerHTML = grid[0];
-      retry = false;
-    }
+    grid[5] = playerIcon;
+
+    document.getElementById("item5").innerHTML = grid[5];
   });
   document.getElementById("item6").addEventListener("click", event => {
-    if (grid[0] != "") {
-      retry = true;
-    } else {
-      grid[0] = playerIcon;
-      document.getElementById("item0").innerHTML = grid[0];
-      retry = false;
-    }
+    grid[6] = playerIcon;
+
+    document.getElementById("item6").innerHTML = grid[6];
   });
   document.getElementById("item7").addEventListener("click", event => {
-    if (grid[0] != "") {
-      retry = true;
-    } else {
-      grid[0] = playerIcon;
-      document.getElementById("item0").innerHTML = grid[0];
-      retry = false;
-    }
+    grid[7] = playerIcon;
+
+    document.getElementById("item7").innerHTML = grid[7];
   });
   document.getElementById("item8").addEventListener("click", event => {
-    if (grid[0] != "") {
-      retry = true;
-    } else {
-      grid[0] = playerIcon;
-      document.getElementById("item0").innerHTML = grid[0];
-      retry = false;
-    }
+    grid[8] = playerIcon;
+
+    document.getElementById("item8").innerHTML = grid[8];
   });
 }
