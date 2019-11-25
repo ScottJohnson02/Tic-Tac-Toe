@@ -5,7 +5,7 @@
 4. change the text in the clicked item to an x and prevent the box from clicking again
 */
 let grid = ["", "", "", "", "", "", "", "", "", ];
-let turn = 0;
+let turn = ((Math.floor(Math.random() * 2)));
 let retry = false;
 document.getElementById("grid-container").addEventListener("click", event => {
   if (turn == 0 && retry == false) {
