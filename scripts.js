@@ -4,12 +4,15 @@
 3. add an X in the propper array spot
 4. change the text in the clicked item to an x and prevent the box from clicking again
 */
-let turn = (Math.floor(Math.random()*2));
+let turn = (Math.floor(Math.random() * 2));
 
 let grid = ['', '', '', '', '', '', '', '', '']
+let players = ['X', 'O'];
 
 document.body.addEventListener("click", myFunction);
 document.getElementById("reset").addEventListener("click", reset);
+document.getElementById("turnCount").textContent = 'Player ' + players[turn] + ' is up';
+
 
 function reset() {
   window.location.reload();
@@ -19,22 +22,21 @@ function myFunction() {
   if (turn == 0) {
     if (event.target.nodeName == "BUTTON") {
       if (event.target.textContent == '') {
-        console.log("Clicked", event.target.textContent);
         event.target.textContent = 'X';
         grid[event.target.id] = 'X'
         winCheck('X');
         turn++;
+        document.getElementById("turnCount").textContent = 'Player ' + players[turn] + ' is up';
       }
     }
   } else {
     if (event.target.nodeName == "BUTTON") {
-
       if (event.target.textContent == '') {
-        console.log("Clicked", event.target.textContent);
         event.target.textContent = 'O';
         grid[event.target.id] = 'O';
         winCheck('O');
         turn--;
+        document.getElementById("turnCount").textContent = 'Player ' + players[turn] + ' is up';
       }
     }
   }
@@ -72,29 +74,3 @@ function winCheck(value) {
     console.log('no winner')
   }
 }
-
-function myFunction() {
-  if (turn == 0) {
-    if (event.target.nodeName == "BUTTON") {
-      if (event.target.textContent == '') {
-        console.log("Clicked", event.target.textContent);
-        event.target.textContent = 'X';
-        grid[event.target.id] = 'X'
-        winCheck('X');
-        turn++;
-      }
-    }
-  } else {
-    if (event.target.nodeName == "BUTTON") {
-
-      if (event.target.textContent == '') {
-        console.log("Clicked", event.target.textContent);
-        event.target.textContent = 'O';
-        grid[event.target.id] = 'O';
-        winCheck('O');
-        turn--;
-      }
-    }
-  }
-}
-document.body.addEventListener("click", myFunction);
