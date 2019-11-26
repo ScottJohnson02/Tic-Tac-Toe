@@ -9,6 +9,7 @@ padding: 100px;
 .top1,
 .top2 {
   border-top: none;
+  border-collapse: collapse;
 }
 
 .top2,
