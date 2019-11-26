@@ -12,11 +12,6 @@ font-size: 20px;
 font-style: bold;
 }
 
-br{
-  display: flex;
-  flex-shrink: 30px;
-}
-
 .top0,
 .top1,
 .top2 {
