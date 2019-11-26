@@ -2,4 +2,29 @@ button{
   position: relative;
 padding: 100px;
  border: 1px solid rgba(0, 0, 0, 0.8);
+ 
+}
+
+.top0,
+.top1,
+.top2 {
+  border-top: none;
+}
+
+.top2,
+.mid5,
+.bot8 {
+  border-right: none;
+}
+
+.bot6,
+.bot7,
+.bot8 {
+  border-bottom: none;
+}
+
+.top0,
+.mid3,
+.bot6 {
+  border-left: none;
 }
