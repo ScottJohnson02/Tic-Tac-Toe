@@ -8,13 +8,13 @@ let turn = 0;
 let grid = ['', '', '', '', '', '', '', '', '']
 
 document.body.addEventListener("click", myFunction);
+document.getElementById("reset").addEventListener("click", reset);
+
+function reset() {
+  window.location.reload();
+}
 
 function myFunction() {
-  if (event.target.nodeName == "BUTTON") {
-    if (event.target.textContent == 'reset') {
-      window.location.reload();
-    }
-  }
   if (turn == 0) {
     if (event.target.nodeName == "BUTTON") {
       if (event.target.textContent == '') {
