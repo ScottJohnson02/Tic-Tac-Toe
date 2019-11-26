@@ -12,6 +12,10 @@ font-size: 20px;
 font-style: bold;
 }
 
+br{
+  display: flex;
+  flex-shrink: 30px;
+}
 
 .top0,
 .top1,
@@ -37,6 +41,8 @@ font-style: bold;
   border-left: none;
 
 }
+
+
 .board{
 padding-left: 25%;
 }
