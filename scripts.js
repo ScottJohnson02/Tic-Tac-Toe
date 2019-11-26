@@ -7,6 +7,38 @@
 let turn = 0;
 let grid = ['', '', '', '', '', '', '', '', '']
 
+document.body.addEventListener("click", myFunction);
+document.getElementById("reset").addEventListener("click", reset);
+
+function reset() {
+  window.location.reload();
+}
+
+function myFunction() {
+  if (turn == 0) {
+    if (event.target.nodeName == "BUTTON") {
+      if (event.target.textContent == '') {
+        console.log("Clicked", event.target.textContent);
+        event.target.textContent = 'X';
+        grid[event.target.id] = 'X'
+        winCheck('X');
+        turn++;
+      }
+    }
+  } else {
+    if (event.target.nodeName == "BUTTON") {
+
+      if (event.target.textContent == '') {
+        console.log("Clicked", event.target.textContent);
+        event.target.textContent = 'O';
+        grid[event.target.id] = 'O';
+        winCheck('O');
+        turn--;
+      }
+    }
+  }
+}
+
 
 function winCheck(value) {
 
