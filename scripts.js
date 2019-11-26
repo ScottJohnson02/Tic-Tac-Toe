@@ -4,7 +4,8 @@
 3. add an X in the propper array spot
 4. change the text in the clicked item to an x and prevent the box from clicking again
 */
-let turn = 0;
+let turn = (Math.floor(Math.random()*2));
+
 let grid = ['', '', '', '', '', '', '', '', '']
 
 document.body.addEventListener("click", myFunction);

@@ -1,8 +1,10 @@
 button {
-  position: relative;
-padding: 100px;
+position: relative;
+ width:200px;
+ height:200px;
  border: 1px solid rgba(0, 0, 0, 0.8);
-
+font-size: 20px;
+font-style: bold;
 }
 
 .top0,
@@ -28,4 +30,8 @@ padding: 100px;
 .mid3,
 .bot6 {
   border-left: none;
+
+}
+.board{
+padding-left: 25%;
 }
