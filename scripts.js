@@ -36,7 +36,7 @@ function myFunction() {
         turn++;
       }
     }
-  } else {
+  } else { 
     if (event.target.nodeName == "BUTTON") {
 
       if (event.target.textContent == '') {
