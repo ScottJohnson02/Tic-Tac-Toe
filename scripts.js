@@ -20,7 +20,7 @@ document.getElementById("grid-container").addEventListener("click", event => {
 
 });
 
-function divReplace(playerIcon) {
+function divRen place(playerIcon) {
   document.getElementById("item0").addEventListener("click", event => {
     grid[0] = playerIcon;
     document.getElementById("item0").innerHTML = grid[0];
