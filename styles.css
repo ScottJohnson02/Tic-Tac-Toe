@@ -1,6 +1,7 @@
 button {
 position: relative;
- padding: 100px;
+ width:200px;
+ height:200px;
  border: 1px solid rgba(0, 0, 0, 0.8);
 
 }
@@ -28,4 +29,7 @@ position: relative;
 .bot6 {
   border-left: none;
 
+}
+.board{
+padding-left: 25%;
 }
