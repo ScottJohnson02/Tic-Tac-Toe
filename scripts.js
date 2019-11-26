@@ -7,6 +7,7 @@
 let turn = 0;
 let grid = ['', '', '', '', '', '', '', '', '']
 
+<<<<<<< HEAD
 
 function winCheck(value) {
 
@@ -25,6 +26,15 @@ function winCheck(value) {
   }
 }
 
+=======
+document.body.addEventListener("click", myFunction);
+document.getElementById("reset").addEventListener("click", reset);
+
+function reset() {
+  window.location.reload();
+}
+
+>>>>>>> d90eb8cfafe1be3804475ef094f3e89c67709750
 function myFunction() {
   if (turn == 0) {
     if (event.target.nodeName == "BUTTON") {
