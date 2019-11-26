@@ -7,26 +7,6 @@
 let turn = 0;
 let grid = ['', '', '', '', '', '', '', '', '']
 
-<<<<<<< HEAD
-
-function winCheck(value) {
-
-  if (grid[0] == value && grid[1] == value && grid[2] == value) {
-    alert(value + " wins")
-    document.body.removeEventListener("click", myFunction);
-  } else if (
-    grid[3] === value && grid[4] === value && grid[5] === value) {
-    alert(value + " wins")
-    document.body.removeEventListener("click", myFunction);
-  } else if (grid[6] === value && grid[7] === value && grid[8] === value) {
-    alert(value + " wins")
-    document.body.removeEventListener("click", myFunction);
-  } else {
-    console.log('no winner')
-  }
-}
-
-=======
 document.body.addEventListener("click", myFunction);
 document.getElementById("reset").addEventListener("click", reset);
 
@@ -34,7 +14,6 @@ function reset() {
   window.location.reload();
 }
 
->>>>>>> d90eb8cfafe1be3804475ef094f3e89c67709750
 function myFunction() {
   if (turn == 0) {
     if (event.target.nodeName == "BUTTON") {
@@ -58,4 +37,63 @@ function myFunction() {
       }
     }
   }
-};
+}
+
+
+function winCheck(value) {
+
+  if (grid[0] == value && grid[1] == value && grid[2] == value) {
+    alert(value + " wins")
+    document.body.removeEventListener("click", myFunction);
+  } else if (
+    grid[3] === value && grid[4] === value && grid[5] === value) {
+    alert(value + " wins")
+    document.body.removeEventListener("click", myFunction);
+  } else if (grid[6] === value && grid[7] === value && grid[8] === value) {
+    alert(value + " wins")
+    document.body.removeEventListener("click", myFunction);
+  } else if (grid[0] === value && grid[3] === value && grid[6] === value) {
+    alert(value + " wins")
+    document.body.removeEventListener("click", myFunction);
+  } else if (grid[1] === value && grid[4] === value && grid[7] === value) {
+    alert(value + " wins")
+    document.body.removeEventListener("click", myFunction);
+  } else if (grid[2] === value && grid[5] === value && grid[8] === value) {
+    alert(value + " wins")
+    document.body.removeEventListener("click", myFunction);
+  } else if (grid[0] === value && grid[4] === value && grid[8] === value) {
+    alert(value + " wins")
+    document.body.removeEventListener("click", myFunction);
+  } else if (grid[2] === value && grid[4] === value && grid[6] === value) {
+    alert(value + " wins")
+    document.body.removeEventListener("click", myFunction);
+  } else {
+    console.log('no winner')
+  }
+}
+
+function myFunction() {
+  if (turn == 0) {
+    if (event.target.nodeName == "BUTTON") {
+      if (event.target.textContent == '') {
+        console.log("Clicked", event.target.textContent);
+        event.target.textContent = 'X';
+        grid[event.target.id] = 'X'
+        winCheck('X');
+        turn++;
+      }
+    }
+  } else {
+    if (event.target.nodeName == "BUTTON") {
+
+      if (event.target.textContent == '') {
+        console.log("Clicked", event.target.textContent);
+        event.target.textContent = 'O';
+        grid[event.target.id] = 'O';
+        winCheck('O');
+        turn--;
+      }
+    }
+  }
+}
+document.body.addEventListener("click", myFunction);
