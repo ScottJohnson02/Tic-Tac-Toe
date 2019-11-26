@@ -45,7 +45,7 @@ document.body.addEventListener("click", event => {
         turn++;
       }
     }
-  } else {
+  } else { 
     if (event.target.nodeName == "BUTTON") {
 
       if (event.target.textContent == '') {
