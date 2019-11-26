@@ -17,6 +17,16 @@ function winCheck(value) {
     alert(value + " wins")
   } else if (grid[6] === value && grid[7] === value && grid[8] === value) {
     alert(value + " wins")
+  } else if (grid[0] === value && grid[3] === value && grid[6] === value) {
+    alert(value + " wins")
+  } else if (grid[1] === value && grid[4] === value && grid[7] === value) {
+    alert(value + " wins")
+  } else if (grid[2] === value && grid[5] === value && grid[8] === value) {
+    alert(value + " wins")
+  } else if (grid[0] === value && grid[4] === value && grid[8] === value) {
+    alert(value + " wins")
+  } else if (grid[2] === value && grid[4] === value && grid[6] === value) {
+    alert(value + " wins")
   } else {
     console.log('no winner')
   }
