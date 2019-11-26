@@ -17,7 +17,9 @@ function reset() {
 
 function myFunction() {
   if (turn == 0) {
+    console.log(event.target.textContent)
     if (event.target.nodeName == "BUTTON") {
+      console.log(event.target.textContent)
       if (event.target.textContent == '') {
         console.log("Clicked", event.target.textContent);
         event.target.textContent = 'X';
@@ -27,10 +29,10 @@ function myFunction() {
       }
     }
   } else {
+    console.log(event.target.textContent)
     if (event.target.nodeName == "BUTTON") {
-
+      console.log( event.target.textContent);
       if (event.target.textContent == '') {
-        console.log("Clicked", event.target.textContent);
         event.target.textContent = 'O';
         grid[event.target.id] = 'O';
         winCheck('O');

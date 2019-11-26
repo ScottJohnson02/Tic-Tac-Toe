@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 button {
-position: relative;
  width:200px;
  height:200px;
  border: 1px solid rgba(0, 0, 0, 0.8);
@@ -7,11 +12,11 @@ font-size: 20px;
 font-style: bold;
 }
 
+
 .top0,
 .top1,
 .top2 {
   border-top: none;
-  border-collapse: collapse;
 }
 
 .top2,
