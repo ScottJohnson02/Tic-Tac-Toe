@@ -1,14 +1,5 @@
-#grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background: linear-gradient(to bottom, #ff0000 0%, #66ff66 100%);
-  padding: 10px;
-}
-
-#grid-container div {
-  background: linear-gradient(to top, #00ffff 0%, #ff9999 52%);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+button{
+  position: relative;
+padding: 100px;
+ border: 1px solid rgba(0, 0, 0, 0.8);
 }
