@@ -19,6 +19,7 @@ h1 {
   display: inline;
   color: black;
   background: linear-gradient(to bottom, #cc0000 0%, #ffffff 103%);
+  font-weight:bolder;
 }
 
 body {
