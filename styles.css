@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
 .board button {
   width: 30%;
   height: 200px;
@@ -14,9 +19,11 @@
 }
 
 #reset {
-  margin-top: 15px;
   height: 75px;
   width: 100px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
 }
 
 .top0,
@@ -44,7 +51,19 @@
 }
 
 .board {
+  width: 70%;
+  margin: auto;
   display: flex;
   justify-content: center;
   flex-flow: wrap row;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  justify-content: center;
+  flex-direction: row;
 }

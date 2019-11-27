@@ -73,6 +73,8 @@ function winCheck(value) {
   } else if (grid[2] === value && grid[4] === value && grid[6] === value) {
     alert(value + " wins")
     document.body.removeEventListener("click", myFunction);
+  } else if (grid[0] != '' && grid[1] != '' && grid[2] != '' && grid[3] != '' && grid[4] != '' && grid[5] != '' && grid[6] != '' && grid[7] != '' && grid[8] != '') {
+    alert('no winner')
   } else {
     console.log('no winner')
   }
