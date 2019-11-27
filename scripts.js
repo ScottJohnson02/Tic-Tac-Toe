@@ -20,7 +20,9 @@ function reset() {
 
 function myFunction() {
   if (turn == 0) {
+    console.log(event.target.textContent)
     if (event.target.nodeName == "BUTTON") {
+      console.log(event.target.textContent)
       if (event.target.textContent == '') {
         event.target.textContent = 'X';
         grid[event.target.id] = 'X'
@@ -30,6 +32,7 @@ function myFunction() {
       }
     }
   } else {
+    console.log(event.target.textContent)
     if (event.target.nodeName == "BUTTON") {
       if (event.target.textContent == '') {
         event.target.textContent = 'O';

@@ -1,9 +1,28 @@
-button {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color:white;
 
- width:200px;
- height:200px;
-font-size: 20px;
-border-width: thin;
+}
+
+.board button {
+  width: 30%;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  padding: 0;
+  display: inline;
+  color:black;
+ background: linear-gradient(to bottom, #cc0000 0%, #ffffff 103%);
+}
+body{   background: linear-gradient(to bottom, #000000 80%, #ffffff 103%);
+}
+#reset {
+  margin-top: 15px;
+  height: 75px;
+  width: 100px;
+ background: linear-gradient(to bottom, #808080 0%, #000000 103%);
 }
 
 .top0,
@@ -28,8 +47,10 @@ border-width: thin;
 .mid3,
 .bot6 {
   border-left: none;
-
 }
-.board{
-padding-left: 25%;
+
+.board {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap row;
 }
